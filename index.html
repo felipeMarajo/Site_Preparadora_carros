@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- MetaTags do projeto -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Slug Performance</title>
+        <link rel="shortcut icon" href="_images/logoicon.png" type="image/png" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="_css/estilo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header id="cabecalho">
+            <!-- <img id="logo" src="_images/logo.png" alt="Logo"> -->
+            <img id="l-nome" src="_images/peformance_slug.png" alt="">
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href="#apresentacao">Início</a></li>
+                    <li><a href="#about-us">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#nosso-trabalho">Nossos Trabalhos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" onclick="toggleNav()">
+                <i class="fas fa-bars" ></i>
+            </button>
+
+        </header>
+        
+        <section id="home">
+
+            <div id="apresentacao">
+                <img id="banner" src="_images/wallpapers_site/nissan_300zx-cuted3.jpg" alt="Banner Nissan 300zx">
+            </div>
+
+            <!-- About us Section -->
+            <div id="about-us" class="secoes">
+                <div>
+                    <h1 class="titulos">Quem Somos</h1>
+                </div>
+                <div class="texto-coluna">
+                    <p>
+                        Performace Slug é uma empresa apaixonada por carros, motores V8. adoramos personalizar, preparar e restaurar carros! Contamos com porfissionais que possuem grande conhecimento técnico e muita criatividade.
+                    </p>
+                    
+                    <p>
+                        Temos o compromisso de oferecer um atendimento diferenciado e um produto de alta qualidade, personalizado de acordo com as necessidades de cada cliente.
+                    </p>
+                    <p>
+                        Estamos presentes em todo território brasileiro, com uma estrutura sólida e com profissionais capacitados para superar as expectativas dos clientes mais exigentes.
+                    </p>
+                </div>
+            </div>
+            <!-- / End About us Section -->
+
+            <!-- Serviços Section -->
+            <div id="servicos" class="secoes">
+                <h1 class="titulos">Serviços</h1>
+
+                <div class="cards">
+                    <div class="card">
+                        <a href="https://www.google.com/search?q=prepared+car&source=lnms&sa=X&ved=0ahUKEwj09qShj4PiAhXvIbkGHd8bCaAQ_AUICSgA&biw=1600&bih=789&dpr=1" target="_blank"><img src="_images/cards/car-engine.jpg" alt="Motor"></a>
+                        <p>PREPARAÇÃO</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.google.com/search?q=ecu+car&oq=ecu+car&aqs=chrome..69i57j69i60j0l2j69i59j0.1559j0j9&sourceid=chrome&ie=UTF-8" target="_blank"><img src="_images/cards/ecu.jpg" alt="ECU"></a>                     
+                        <p>ENGINE CONTROL UNIT</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://en.wikipedia.org/wiki/Exhaust_system" target="_blank"><img src="_images/cards/escapeweb.jpg" alt="Escapamento"></a>
+                        <p>ESCAPAMENTO</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.google.com/search?ei=gy3OXPnAGoXD5OUPgrOPyAE&q=car+restoration+&oq=car+restoration+&gs_l=psy-ab.3..0i7i30l10.13440.14647..15629...0.0..0.196.534.0j3......0....1j2..gws-wiz.......35i39j0i67j0i203.Zkdrj_Wr6c0" target="_blank"><img src="_images/cards/restaura.jpg" alt="Carro restaurado"></a>                
+                        <p>RESTAURAÇÃO</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.google.com/search?q=wind+tunnel&oq=wind+tunnel&aqs=chrome..69i57j69i60j0l2j69i59j0.1551j0j9&sourceid=chrome&ie=UTF-8" target="_blank"><img src="_images/cards/wind-tunnel.jpg" alt="Túnel de vento"></a>
+                        <p>AERODINÂMICA</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.google.com/search?q=roll+cage&oq=roll+cage&aqs=chrome..69i57j0j69i59j0l3.1767j0j9&sourceid=chrome&ie=UTF-8" target="_blank"><img src="_images/cards/roll_cage.jpg" alt="Gaiola de carro"></a>
+                        <p>REFORÇOS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Serviços Section -->
+
+            <!-- Encontrar loja Section -->
+            <div id="encontrar-loja">
+                <div class="align-left slide-in" id="texto-botao" mobile-div>
+                    <h3>PRESENTE</h3>
+                    <h3>EM MAIS DE 30 PAÍSES</h3>
+                    <a href="https://www.google.com.br/maps/@-3.7549114,-38.5305317,15z?hl=en&authuser=0" target="_blank">Encontre uma Slug Performance</a>
+                </div>
+            </div>
+            <!-- / End Encontrar loja Section -->
+
+            <!-- Nossos Trabalhos Section -->
+            <div id="nosso-trabalho" class="secoes">
+                <h1 class="titulos">Nossos Trabalhos</h1>
+                
+                <div id="carousel">
+
+                    <div id="btn-left" class="btn">
+                        <button id="left-btn" class="slider-btn">
+                            <svg viewBox="0 0 256 256">
+                                <polyline fill="none" stroke="black" stroke-width="16" points="184,16 72,128 184,240" class="cor-btn"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="slides">
+                        <div class="home-grid products-grid products-grid--max-4">
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-bmw-135i2.jpg" alt="BMW 135i2">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-bmw-m135i.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-citroen-ds3-final.jpg" alt="Citroen DS3">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-fusca.jpg" alt="Fusca TSI">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-golf-gti1.jpg" alt="Golf GTI">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-golf-tsi.jpg" alt="TSI">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-l200-triton.jpg" alt="L200">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-mini-cooper-s.jpg" alt="Mini Cooper">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-ralliart-stg-1.jpg" alt="Ralli Art">
+                            </div>
+                            <div class="item">
+                                <img src="_images/graficos/dinamometro-troller-wb.jpg" alt="Troller">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="btn-right" class="btn">
+                        <button id="right-btn" class="slider-btn">
+                            <svg viewBox="0 0 256 256">
+                                <polyline fill="none" stroke="black" stroke-width="16" points="72,16 184,128 72,240" class="cor-btn"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- / End Nossos Trabalhos Sction -->
+
+            <!-- Contado Section -->
+            <div id="contato" class="secoes">
+                <img id="logo-contato" src="_images/logo.png" alt="Logo">
+
+                <div id="contato-icon">
+                    <div class="icon">
+                        <a href="https://www.facebook.com" target="_blank"><img src="_images/icons/facebook.png" alt=""></a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.instagram.com.br" target="_blank"><img src="_images/icons/instagram.png" alt=""></a>
+                        
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.twitter.com" target="_blank"><img src="_images/icons/twitter.png" alt=""></a>
+                        
+                    </div>
+                    <div class="icon">
+                        <a href="" target="_blank"><img src="_images/icons/letter.png" alt=""></a>    
+                    </div>
+                </div>
+                <h1>We love Turbo</h1>
+            </div>
+            <!-- / End Contado Section -->
+    </section>
+
+    <footer>
+        <div>
+            <p>Performance Slug - Todos os direitos reservados | Desenvolvido por Felipe Gomes</p>
+            <p>Ícones em: <a href="https://www.freepik.com/" target="_blanck">Freepik</a> e <a href="https://www.flaticon.com/" target="_blanck">Flaticon</a></p>
+        </div>
+    </footer>
+
+    <script src="_javascript/scripts.js"></script>
+    </body>
+    
+</html>

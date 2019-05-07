@@ -1,0 +1,419 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+
+body {
+    margin: 0px;
+    background-color: #1a1a1a;
+}
+
+header#cabecalho {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    width:100%;
+    background-color: rgba(0, 0, 0, .7);
+    
+}
+
+/* header#cabecalho img#logo {
+    display: none;
+    border: solid 1px blue;
+    margin: 0% 0% 2px 2%;
+    width: 90px;
+} */
+
+header#cabecalho img#l-nome {
+    margin-left: 2%;
+    width: 165px; 
+}
+
+/* -----------------------------------*/
+/* ---->>> Formatação do menu <<<-----*/
+/* -----------------------------------*/
+/*  */
+nav#menu {
+    flex-grow: 10;
+    float: right;
+}
+
+nav#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0% 0%;
+}
+
+nav#menu li{
+    cursor: pointer;
+    margin: 0px 10px; 
+}
+
+nav#menu li:hover{
+    border-bottom: solid 3px #fff;
+}
+
+nav#menu a{
+    display:inline-block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    border: solid gray;
+    margin: 15px;
+}
+
+@media (min-width: 952px){
+    .menu-toggle{display: none;}
+    header#cabecalho{display: flex !important; }
+    nav#menu{display: block !important;}
+    nav#menu ul{display: flex !important;}
+}
+@media (max-width: 951px){
+    nav#menu{display: none;} 
+}
+
+/* ------>>> Formatação do <<<--------*/
+/* ---------->>> BANNER <<<-----------*/
+/* ----->>> de Apresentação <<<-h-----*/
+div#apresentacao {
+    /* border-top:  solid 1px blue;
+    border-bottom: solid 1px blue; */
+    width: 100%;
+}
+
+div#apresentacao img#banner {
+    width: 100%;
+    height: 100%;
+    /* border-bottom: solid 1px red; */
+}
+
+/* Formatação dos titulos das seções */
+.titulos {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 0%;
+}
+
+.secoes {
+    border-top: solid 1px rgba(255, 255, 255, 0.500);
+    /* border-bottom: solid 1px rgba(255, 255, 255, 0.375); */
+    padding: 90px 0%;
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ----------->>> SEÇÃO <<<-----------*/
+/* -------->>> Sobre nós <<<----------*/
+.texto-coluna {
+    display: flex;
+    margin: 0% 11%;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    line-height: 25px;
+}
+
+div.texto-coluna p {
+    margin: 0 1%;
+    width: 33%
+}
+
+@media screen and (max-width: 767px){
+    .texto-coluna {flex-direction: column;}
+    div.texto-coluna p {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .titulos{
+        font-size: 40px;
+    }
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ----------->>> SEÇÃO <<<-----------*/
+/* --------->>> SERVIÇOS <<<----------*/
+div#servicos {
+    /* border-top: solid 1px red;
+    border-bottom: solid 1px red; */
+}
+
+.cards {
+    display: grid;
+    margin: 0 10%;
+    padding: 10px 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    justify-content: space-around;
+    align-items: start;
+}
+
+div.card {
+    cursor: pointer;
+    max-width: 380px;
+    max-height: 252px;
+}
+
+div.card img {
+    filter: saturate(0%);
+    transition:filter 700ms; 
+    max-width: 100%;
+    min-height: 100%;
+}
+
+div.card img:hover {
+    filter: saturate(180%);
+}
+
+div.card p {
+    margin: 0;
+    color: #fff;
+    font-size: 16pt;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 1000px){
+    .cards{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    div.card{
+        margin:auto auto 10px auto;}
+}
+
+@media (max-width: 770px){
+    .cards{
+        display: block;
+    }
+    div.card{
+        margin:auto auto 10px auto;}
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ----------->>> SEÇÃO <<<-----------*/
+/* ----->>> encontrar a loja <<<------*/
+div#encontrar-loja {
+    border-top: solid 1px rgba(255, 255, 255, 0.500);
+    height: 335px;
+    background-image: url("../_images/wallpapers_site/mapa.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#texto-botao {
+    margin: 100px auto;
+    color: #fff;
+    max-width: 350px;
+}
+
+div#texto-botao h3 {
+    font-size: 20pt;
+    font-family: "Ubuntu", sans-serif;
+    margin: 5px auto;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+div#texto-botao a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13pt;
+    padding: 14px;
+    margin: 10px calc(100% - 90%);
+    border: solid 3px #02454f;
+}
+
+div#texto-botao a:hover {
+    background-color: #02454f;
+}
+
+.align-left {
+    transform: translateX(-150%)
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%)
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ---------->>> SEÇÃO <<<------------*/
+/* ----->>> Nossos Trabalhos <<<------*/
+div#carousel {
+    /* border: solid 1px #fff; */
+    display: grid;
+    grid-template-columns: 24px 92% 24px;
+    grid-column-gap:1%;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#slides {
+    /* border: solid 1px rgb(252, 0, 0); */
+    overflow: hidden;
+    /* width: 78%; */
+    margin: 0;
+} 
+/* Reduz para 3 cards na tela */
+@media(max-width: 1599px){
+    div#carousel{grid-template-columns: 24px 915px 24px;}
+    div#slides{width: 915px}
+}
+
+/* Reduz para 2 cards na tela */
+@media(max-width: 1110px){
+    div#carousel{grid-template-columns: 24px 612px 24px;}
+    div#slides{width: 612px}
+}
+
+/* Reduz para 1 cards na tela */
+@media(max-width: 739px){
+    div#carousel{grid-template-columns: 24px 306px 24px;}
+    div#slides{width: 306px}
+}
+
+@media(max-width: 330px){
+    div.item{width: 245px; height: 175px;}
+    div.item img{width: 245px !important;}
+    div#carousel{grid-template-columns: 10% 80% 10%;}
+    div#slides{width: 100%}
+}
+
+.home-grid.products-grid.products-grid--max-4 {
+    border: solid 1px blue;
+    /* transition:-ms-transform 0.5s ease 0s; */
+    transition: all 2s ease 0s;
+    position:relative;
+    white-space:nowrap;
+}
+
+div#slides div {
+    display: flex;
+}
+
+div#slides img {
+    /* border: solid 1px #fff; */
+    height: 234px;
+    width: 298px;
+}
+
+.slider-btn {
+    background-color: transparent;
+    border: 0 none;
+    padding: 0px;
+    /* color: buttontext; */
+    cursor: pointer;
+}
+
+#left-btn {
+    display: none;
+}
+
+.slider-btn svg {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+div#btn-left {
+    /* border: solid 1px white; */
+}
+.btn #left{
+    /* justify-content: right; */
+    /* border: solid 1px white; */
+}
+.cor-btn {
+    /* stroke-width: 4px; */
+    stroke: #fff;
+}
+
+.item {
+    margin: 4px;
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ---------->>> SEÇÃO <<<------------*/
+/* --------->>> Contato <<<-----------*/
+div#contato{
+    display: grid;
+    justify-items: center;
+}
+
+div#contato img#logo-contato{
+    margin: auto;
+    width: 280px;
+    margin-bottom: 60px;
+}
+
+div#contato-icon{
+    /* border: solid 1px red; */
+    display: grid;
+    width: 25%;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20%;
+    justify-content: center;
+}
+div.icon{    
+    /* border: solid 1px #fff; */
+    text-align: center;
+    /* margin: 35%; */
+}
+
+div.icon img{
+    width: 28px;
+}
+
+div#contato h1 {
+    color: #fff;
+}
+
+/* ------>>> Formatação da <<<--------*/
+/* ----------->>> FOOTER <<<----------*/
+footer{
+    background-color: black;
+    border-top: solid 1px rgba(255, 255, 255, 0.200);
+    color: #767676;
+    text-align: center;
+}
+
+footer div {
+    width: 100%;
+    height: 100%;
+    /* line-height: 0px; */
+    /* margin: 0; */
+}
+
+footer a {
+    color: #767676;
+    text-decoration: none;
+}
