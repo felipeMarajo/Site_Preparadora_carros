@@ -310,7 +310,7 @@ div#slides {
 }
 
 .home-grid.products-grid.products-grid--max-4 {
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     /* transition:-ms-transform 0.5s ease 0s; */
     transition: all 2s ease 0s;
     position:relative;
